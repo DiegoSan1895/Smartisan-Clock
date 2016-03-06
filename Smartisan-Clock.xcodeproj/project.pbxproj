@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BA74A6FD8FFC089F8494F5E /* Pods_Smartisan_Clock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7C0377EDE28B8CD15544C3 /* Pods_Smartisan_Clock.framework */; };
+		BD1CCB9E1C8C39C400E9FA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCB9D1C8C39C400E9FA8D /* AppDelegate.swift */; };
+		BD1CCBA51C8C39C400E9FA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBA31C8C39C400E9FA8D /* Main.storyboard */; };
+		BD1CCBA71C8C39C400E9FA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBA61C8C39C400E9FA8D /* Assets.xcassets */; };
+		BD1CCBAA1C8C39C400E9FA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBA81C8C39C400E9FA8D /* LaunchScreen.storyboard */; };
+		BD1CCBB51C8C39C400E9FA8D /* Smartisan_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBB41C8C39C400E9FA8D /* Smartisan_ClockTests.swift */; };
+		BD1CCBC01C8C39C400E9FA8D /* Smartisan_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBBF1C8C39C400E9FA8D /* Smartisan_ClockUITests.swift */; };
+		BD1CCBD21C8C3A8900E9FA8D /* SmartisanClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBCD1C8C3A8900E9FA8D /* SmartisanClock.ttf */; };
+		BD1CCBD31C8C3A8900E9FA8D /* SmartisanClockBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBCE1C8C3A8900E9FA8D /* SmartisanClockBold.ttf */; };
+		BD1CCBD41C8C3A8900E9FA8D /* city_all.xml in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBCF1C8C3A8900E9FA8D /* city_all.xml */; };
+		BD1CCBD51C8C3A8900E9FA8D /* statement_EN.html in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBD01C8C3A8900E9FA8D /* statement_EN.html */; };
+		BD1CCBD61C8C3A8900E9FA8D /* statement.html in Resources */ = {isa = PBXBuildFile; fileRef = BD1CCBD11C8C3A8900E9FA8D /* statement.html */; };
+		BD1CCBF31C8C4F9800E9FA8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBF21C8C4F9800E9FA8D /* BaseViewController.swift */; };
+		BD1CCBF51C8C4FE300E9FA8D /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */; };
+		BD1CCBF71C8C566800E9FA8D /* ClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD1CCBB11C8C39C400E9FA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD1CCB921C8C39C400E9FA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD1CCB991C8C39C400E9FA8D;
+			remoteInfo = "Smartisan-Clock";
+		};
+		BD1CCBBC1C8C39C400E9FA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD1CCB921C8C39C400E9FA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD1CCB991C8C39C400E9FA8D;
+			remoteInfo = "Smartisan-Clock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		386A8C11192E06F7CF439EA2 /* Pods-Smartisan-Clock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartisan-Clock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smartisan-Clock/Pods-Smartisan-Clock.debug.xcconfig"; sourceTree = "<group>"; };
+		3F7C0377EDE28B8CD15544C3 /* Pods_Smartisan_Clock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smartisan_Clock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1CCB9A1C8C39C400E9FA8D /* Smartisan-Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smartisan-Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1CCB9D1C8C39C400E9FA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD1CCBA41C8C39C400E9FA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD1CCBA61C8C39C400E9FA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD1CCBA91C8C39C400E9FA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD1CCBAB1C8C39C400E9FA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1CCBB01C8C39C400E9FA8D /* Smartisan-ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smartisan-ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1CCBB41C8C39C400E9FA8D /* Smartisan_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smartisan_ClockTests.swift; sourceTree = "<group>"; };
+		BD1CCBB61C8C39C400E9FA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1CCBBB1C8C39C400E9FA8D /* Smartisan-ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smartisan-ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1CCBBF1C8C39C400E9FA8D /* Smartisan_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smartisan_ClockUITests.swift; sourceTree = "<group>"; };
+		BD1CCBC11C8C39C400E9FA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1CCBCD1C8C3A8900E9FA8D /* SmartisanClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmartisanClock.ttf; sourceTree = "<group>"; };
+		BD1CCBCE1C8C3A8900E9FA8D /* SmartisanClockBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmartisanClockBold.ttf; sourceTree = "<group>"; };
+		BD1CCBCF1C8C3A8900E9FA8D /* city_all.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = city_all.xml; sourceTree = "<group>"; };
+		BD1CCBD01C8C3A8900E9FA8D /* statement_EN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = statement_EN.html; sourceTree = "<group>"; };
+		BD1CCBD11C8C3A8900E9FA8D /* statement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = statement.html; sourceTree = "<group>"; };
+		BD1CCBD81C8C3B0500E9FA8D /* Barium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Barium.caf; sourceTree = "<group>"; };
+		BD1CCBD91C8C3B0500E9FA8D /* Cesium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cesium.caf; sourceTree = "<group>"; };
+		BD1CCBDA1C8C3B0500E9FA8D /* Copernicium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Copernicium.caf; sourceTree = "<group>"; };
+		BD1CCBDB1C8C3B0500E9FA8D /* Curium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Curium.caf; sourceTree = "<group>"; };
+		BD1CCBDC1C8C3B0500E9FA8D /* fallbackring.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fallbackring.caf; sourceTree = "<group>"; };
+		BD1CCBDD1C8C3B0500E9FA8D /* Fermium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fermium.caf; sourceTree = "<group>"; };
+		BD1CCBDE1C8C3B0500E9FA8D /* Hassium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hassium.caf; sourceTree = "<group>"; };
+		BD1CCBDF1C8C3B0500E9FA8D /* in_call_alarm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = in_call_alarm.caf; sourceTree = "<group>"; };
+		BD1CCBE01C8C3B0500E9FA8D /* Neptunium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neptunium.caf; sourceTree = "<group>"; };
+		BD1CCBE11C8C3B0500E9FA8D /* no_alarm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = no_alarm.caf; sourceTree = "<group>"; };
+		BD1CCBE21C8C3B0500E9FA8D /* Nobelium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nobelium.caf; sourceTree = "<group>"; };
+		BD1CCBE31C8C3B0500E9FA8D /* Plutonium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Plutonium.caf; sourceTree = "<group>"; };
+		BD1CCBE41C8C3B0500E9FA8D /* ruler_back.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ruler_back.caf; sourceTree = "<group>"; };
+		BD1CCBE51C8C3B0500E9FA8D /* Scandium.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Scandium.caf; sourceTree = "<group>"; };
+		BD1CCBE61C8C3B0500E9FA8D /* smartisan_alarms01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = smartisan_alarms01.caf; sourceTree = "<group>"; };
+		BD1CCBE71C8C3B0500E9FA8D /* smartisan_alarms02.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = smartisan_alarms02.caf; sourceTree = "<group>"; };
+		BD1CCBE81C8C3B0500E9FA8D /* stopwatch_clear.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = stopwatch_clear.caf; sourceTree = "<group>"; };
+		BD1CCBE91C8C3B0500E9FA8D /* stopwatch_left_right.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = stopwatch_left_right.caf; sourceTree = "<group>"; };
+		BD1CCBEA1C8C3B0500E9FA8D /* stopwatch_loop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = stopwatch_loop.caf; sourceTree = "<group>"; };
+		BD1CCBEB1C8C3B0500E9FA8D /* stopwatch_mid.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = stopwatch_mid.caf; sourceTree = "<group>"; };
+		BD1CCBEC1C8C3B0500E9FA8D /* time_picker.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = time_picker.caf; sourceTree = "<group>"; };
+		BD1CCBED1C8C3B0500E9FA8D /* timer_10.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timer_10.caf; sourceTree = "<group>"; };
+		BD1CCBEE1C8C3B0500E9FA8D /* timer_30.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timer_30.caf; sourceTree = "<group>"; };
+		BD1CCBEF1C8C3B0500E9FA8D /* timer_loop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timer_loop.caf; sourceTree = "<group>"; };
+		BD1CCBF01C8C3B0500E9FA8D /* timer.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timer.caf; sourceTree = "<group>"; };
+		BD1CCBF21C8C4F9800E9FA8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTableViewCell.swift; sourceTree = "<group>"; };
+		FB316B76EEF0FC1B08E4E837 /* Pods-Smartisan-Clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartisan-Clock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smartisan-Clock/Pods-Smartisan-Clock.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD1CCB971C8C39C400E9FA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA74A6FD8FFC089F8494F5E /* Pods_Smartisan_Clock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1CCBAD1C8C39C400E9FA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1CCBB81C8C39C400E9FA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8288D2EBF3632A84801F7F3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F7C0377EDE28B8CD15544C3 /* Pods_Smartisan_Clock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8710A7606D475982FB2FE7A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				386A8C11192E06F7CF439EA2 /* Pods-Smartisan-Clock.debug.xcconfig */,
+				FB316B76EEF0FC1B08E4E837 /* Pods-Smartisan-Clock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD1CCB911C8C39C400E9FA8D = {
+			isa = PBXGroup;
+			children = (
+				BD1CCB9C1C8C39C400E9FA8D /* Smartisan-Clock */,
+				BD1CCBB31C8C39C400E9FA8D /* Smartisan-ClockTests */,
+				BD1CCBBE1C8C39C400E9FA8D /* Smartisan-ClockUITests */,
+				BD1CCB9B1C8C39C400E9FA8D /* Products */,
+				8710A7606D475982FB2FE7A8 /* Pods */,
+				8288D2EBF3632A84801F7F3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD1CCB9B1C8C39C400E9FA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCB9A1C8C39C400E9FA8D /* Smartisan-Clock.app */,
+				BD1CCBB01C8C39C400E9FA8D /* Smartisan-ClockTests.xctest */,
+				BD1CCBBB1C8C39C400E9FA8D /* Smartisan-ClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD1CCB9C1C8C39C400E9FA8D /* Smartisan-Clock */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCB9D1C8C39C400E9FA8D /* AppDelegate.swift */,
+				BD1CCBF21C8C4F9800E9FA8D /* BaseViewController.swift */,
+				BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */,
+				BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */,
+				BD1CCBA31C8C39C400E9FA8D /* Main.storyboard */,
+				BD1CCBA61C8C39C400E9FA8D /* Assets.xcassets */,
+				BD1CCBA81C8C39C400E9FA8D /* LaunchScreen.storyboard */,
+				BD1CCBAB1C8C39C400E9FA8D /* Info.plist */,
+				BD1CCBD71C8C3A9300E9FA8D /* Support */,
+			);
+			path = "Smartisan-Clock";
+			sourceTree = "<group>";
+		};
+		BD1CCBB31C8C39C400E9FA8D /* Smartisan-ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCBB41C8C39C400E9FA8D /* Smartisan_ClockTests.swift */,
+				BD1CCBB61C8C39C400E9FA8D /* Info.plist */,
+			);
+			path = "Smartisan-ClockTests";
+			sourceTree = "<group>";
+		};
+		BD1CCBBE1C8C39C400E9FA8D /* Smartisan-ClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCBBF1C8C39C400E9FA8D /* Smartisan_ClockUITests.swift */,
+				BD1CCBC11C8C39C400E9FA8D /* Info.plist */,
+			);
+			path = "Smartisan-ClockUITests";
+			sourceTree = "<group>";
+		};
+		BD1CCBD71C8C3A9300E9FA8D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCBCD1C8C3A8900E9FA8D /* SmartisanClock.ttf */,
+				BD1CCBCE1C8C3A8900E9FA8D /* SmartisanClockBold.ttf */,
+				BD1CCBCF1C8C3A8900E9FA8D /* city_all.xml */,
+				BD1CCBD01C8C3A8900E9FA8D /* statement_EN.html */,
+				BD1CCBD11C8C3A8900E9FA8D /* statement.html */,
+				BD1CCBF11C8C3B0F00E9FA8D /* Sounds */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		BD1CCBF11C8C3B0F00E9FA8D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCBD81C8C3B0500E9FA8D /* Barium.caf */,
+				BD1CCBD91C8C3B0500E9FA8D /* Cesium.caf */,
+				BD1CCBDA1C8C3B0500E9FA8D /* Copernicium.caf */,
+				BD1CCBDB1C8C3B0500E9FA8D /* Curium.caf */,
+				BD1CCBDC1C8C3B0500E9FA8D /* fallbackring.caf */,
+				BD1CCBDD1C8C3B0500E9FA8D /* Fermium.caf */,
+				BD1CCBDE1C8C3B0500E9FA8D /* Hassium.caf */,
+				BD1CCBDF1C8C3B0500E9FA8D /* in_call_alarm.caf */,
+				BD1CCBE01C8C3B0500E9FA8D /* Neptunium.caf */,
+				BD1CCBE11C8C3B0500E9FA8D /* no_alarm.caf */,
+				BD1CCBE21C8C3B0500E9FA8D /* Nobelium.caf */,
+				BD1CCBE31C8C3B0500E9FA8D /* Plutonium.caf */,
+				BD1CCBE41C8C3B0500E9FA8D /* ruler_back.caf */,
+				BD1CCBE51C8C3B0500E9FA8D /* Scandium.caf */,
+				BD1CCBE61C8C3B0500E9FA8D /* smartisan_alarms01.caf */,
+				BD1CCBE71C8C3B0500E9FA8D /* smartisan_alarms02.caf */,
+				BD1CCBE81C8C3B0500E9FA8D /* stopwatch_clear.caf */,
+				BD1CCBE91C8C3B0500E9FA8D /* stopwatch_left_right.caf */,
+				BD1CCBEA1C8C3B0500E9FA8D /* stopwatch_loop.caf */,
+				BD1CCBEB1C8C3B0500E9FA8D /* stopwatch_mid.caf */,
+				BD1CCBEC1C8C3B0500E9FA8D /* time_picker.caf */,
+				BD1CCBED1C8C3B0500E9FA8D /* timer_10.caf */,
+				BD1CCBEE1C8C3B0500E9FA8D /* timer_30.caf */,
+				BD1CCBEF1C8C3B0500E9FA8D /* timer_loop.caf */,
+				BD1CCBF01C8C3B0500E9FA8D /* timer.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD1CCB991C8C39C400E9FA8D /* Smartisan-Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1CCBC41C8C39C400E9FA8D /* Build configuration list for PBXNativeTarget "Smartisan-Clock" */;
+			buildPhases = (
+				9850F4BC5165280EA72DDD23 /* Check Pods Manifest.lock */,
+				BD1CCB961C8C39C400E9FA8D /* Sources */,
+				BD1CCB971C8C39C400E9FA8D /* Frameworks */,
+				BD1CCB981C8C39C400E9FA8D /* Resources */,
+				A1E9BF75E2C86F87D23D95CE /* Embed Pods Frameworks */,
+				10ABAEA6765B9F025ED8E125 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smartisan-Clock";
+			productName = "Smartisan-Clock";
+			productReference = BD1CCB9A1C8C39C400E9FA8D /* Smartisan-Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD1CCBAF1C8C39C400E9FA8D /* Smartisan-ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1CCBC71C8C39C400E9FA8D /* Build configuration list for PBXNativeTarget "Smartisan-ClockTests" */;
+			buildPhases = (
+				BD1CCBAC1C8C39C400E9FA8D /* Sources */,
+				BD1CCBAD1C8C39C400E9FA8D /* Frameworks */,
+				BD1CCBAE1C8C39C400E9FA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD1CCBB21C8C39C400E9FA8D /* PBXTargetDependency */,
+			);
+			name = "Smartisan-ClockTests";
+			productName = "Smartisan-ClockTests";
+			productReference = BD1CCBB01C8C39C400E9FA8D /* Smartisan-ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD1CCBBA1C8C39C400E9FA8D /* Smartisan-ClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1CCBCA1C8C39C400E9FA8D /* Build configuration list for PBXNativeTarget "Smartisan-ClockUITests" */;
+			buildPhases = (
+				BD1CCBB71C8C39C400E9FA8D /* Sources */,
+				BD1CCBB81C8C39C400E9FA8D /* Frameworks */,
+				BD1CCBB91C8C39C400E9FA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD1CCBBD1C8C39C400E9FA8D /* PBXTargetDependency */,
+			);
+			name = "Smartisan-ClockUITests";
+			productName = "Smartisan-ClockUITests";
+			productReference = BD1CCBBB1C8C39C400E9FA8D /* Smartisan-ClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD1CCB921C8C39C400E9FA8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = DiegoSan;
+				TargetAttributes = {
+					BD1CCB991C8C39C400E9FA8D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BD1CCBAF1C8C39C400E9FA8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BD1CCB991C8C39C400E9FA8D;
+					};
+					BD1CCBBA1C8C39C400E9FA8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BD1CCB991C8C39C400E9FA8D;
+					};
+				};
+			};
+			buildConfigurationList = BD1CCB951C8C39C400E9FA8D /* Build configuration list for PBXProject "Smartisan-Clock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD1CCB911C8C39C400E9FA8D;
+			productRefGroup = BD1CCB9B1C8C39C400E9FA8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD1CCB991C8C39C400E9FA8D /* Smartisan-Clock */,
+				BD1CCBAF1C8C39C400E9FA8D /* Smartisan-ClockTests */,
+				BD1CCBBA1C8C39C400E9FA8D /* Smartisan-ClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD1CCB981C8C39C400E9FA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1CCBD51C8C3A8900E9FA8D /* statement_EN.html in Resources */,
+				BD1CCBD41C8C3A8900E9FA8D /* city_all.xml in Resources */,
+				BD1CCBD21C8C3A8900E9FA8D /* SmartisanClock.ttf in Resources */,
+				BD1CCBD31C8C3A8900E9FA8D /* SmartisanClockBold.ttf in Resources */,
+				BD1CCBAA1C8C39C400E9FA8D /* LaunchScreen.storyboard in Resources */,
+				BD1CCBA71C8C39C400E9FA8D /* Assets.xcassets in Resources */,
+				BD1CCBD61C8C3A8900E9FA8D /* statement.html in Resources */,
+				BD1CCBA51C8C39C400E9FA8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1CCBAE1C8C39C400E9FA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1CCBB91C8C39C400E9FA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10ABAEA6765B9F025ED8E125 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartisan-Clock/Pods-Smartisan-Clock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9850F4BC5165280EA72DDD23 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E9BF75E2C86F87D23D95CE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartisan-Clock/Pods-Smartisan-Clock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD1CCB961C8C39C400E9FA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1CCBF51C8C4FE300E9FA8D /* WorldClockViewController.swift in Sources */,
+				BD1CCBF31C8C4F9800E9FA8D /* BaseViewController.swift in Sources */,
+				BD1CCBF71C8C566800E9FA8D /* ClockTableViewCell.swift in Sources */,
+				BD1CCB9E1C8C39C400E9FA8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1CCBAC1C8C39C400E9FA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1CCBB51C8C39C400E9FA8D /* Smartisan_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1CCBB71C8C39C400E9FA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1CCBC01C8C39C400E9FA8D /* Smartisan_ClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD1CCBB21C8C39C400E9FA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD1CCB991C8C39C400E9FA8D /* Smartisan-Clock */;
+			targetProxy = BD1CCBB11C8C39C400E9FA8D /* PBXContainerItemProxy */;
+		};
+		BD1CCBBD1C8C39C400E9FA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD1CCB991C8C39C400E9FA8D /* Smartisan-Clock */;
+			targetProxy = BD1CCBBC1C8C39C400E9FA8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD1CCBA31C8C39C400E9FA8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1CCBA41C8C39C400E9FA8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD1CCBA81C8C39C400E9FA8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1CCBA91C8C39C400E9FA8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD1CCBC21C8C39C400E9FA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD1CCBC31C8C39C400E9FA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD1CCBC51C8C39C400E9FA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386A8C11192E06F7CF439EA2 /* Pods-Smartisan-Clock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smartisan-Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiegoSan.Smartisan-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD1CCBC61C8C39C400E9FA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB316B76EEF0FC1B08E4E837 /* Pods-Smartisan-Clock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smartisan-Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiegoSan.Smartisan-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD1CCBC81C8C39C400E9FA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smartisan-ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiegoSan.Smartisan-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smartisan-Clock.app/Smartisan-Clock";
+			};
+			name = Debug;
+		};
+		BD1CCBC91C8C39C400E9FA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smartisan-ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiegoSan.Smartisan-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smartisan-Clock.app/Smartisan-Clock";
+			};
+			name = Release;
+		};
+		BD1CCBCB1C8C39C400E9FA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smartisan-ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiegoSan.Smartisan-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smartisan-Clock";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BD1CCBCC1C8C39C400E9FA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smartisan-ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiegoSan.Smartisan-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smartisan-Clock";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD1CCB951C8C39C400E9FA8D /* Build configuration list for PBXProject "Smartisan-Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1CCBC21C8C39C400E9FA8D /* Debug */,
+				BD1CCBC31C8C39C400E9FA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1CCBC41C8C39C400E9FA8D /* Build configuration list for PBXNativeTarget "Smartisan-Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1CCBC51C8C39C400E9FA8D /* Debug */,
+				BD1CCBC61C8C39C400E9FA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1CCBC71C8C39C400E9FA8D /* Build configuration list for PBXNativeTarget "Smartisan-ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1CCBC81C8C39C400E9FA8D /* Debug */,
+				BD1CCBC91C8C39C400E9FA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1CCBCA1C8C39C400E9FA8D /* Build configuration list for PBXNativeTarget "Smartisan-ClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1CCBCB1C8C39C400E9FA8D /* Debug */,
+				BD1CCBCC1C8C39C400E9FA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD1CCB921C8C39C400E9FA8D /* Project object */;
+}

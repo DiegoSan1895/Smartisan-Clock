@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SmartisanClockBold.ttf">
+            <string>SmartisanClock-Bold</string>
+            <string>SmartisanClock-Bold</string>
+            <string>SmartisanClock-Bold</string>
+            <string>SmartisanClock-Bold</string>
+            <string>SmartisanClock-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--World Clock View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="WorldClockViewController" customModule="Smartisan_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X53-eg-9rV" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYc-Wh-nE0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="K26-WV-fww"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-Fw-DiK">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbar_background" translatesAutoresizingMaskIntoConstraints="NO" id="woC-HJ-SUT">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="1gq-iH-htu"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="1gq-iH-htu"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-XC-xtx">
+                                                <rect key="frame" x="4" y="0.0" width="61" height="44"/>
+                                                <state key="normal" image="topbar_button_info" backgroundImage="topbar_button_black_normal"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="世界时钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96i-q2-2Uj">
+                                                <rect key="frame" x="151" y="10" width="72" height="24"/>
+                                                <fontDescription key="fontDescription" name="SmartisanClock-Bold" family="SmartisanClock" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-Wx-zBJ">
+                                                <rect key="frame" x="310" y="0.0" width="61" height="44"/>
+                                                <state key="normal" image="topbar_button_add" backgroundImage="topbar_button_black_normal"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BwP-Wx-zBJ" secondAttribute="trailing" constant="4" id="EXd-Ww-QpC"/>
+                                            <constraint firstItem="woC-HJ-SUT" firstAttribute="leading" secondItem="Dff-Fw-DiK" secondAttribute="leading" id="GpN-1q-ctG"/>
+                                            <constraint firstItem="96i-q2-2Uj" firstAttribute="centerX" secondItem="Dff-Fw-DiK" secondAttribute="centerX" id="KyD-Rs-hCE"/>
+                                            <constraint firstItem="woC-HJ-SUT" firstAttribute="top" secondItem="Dff-Fw-DiK" secondAttribute="top" id="U39-BR-fta"/>
+                                            <constraint firstAttribute="height" constant="44" id="gXF-6M-VD3"/>
+                                            <constraint firstItem="96i-q2-2Uj" firstAttribute="centerY" secondItem="Dff-Fw-DiK" secondAttribute="centerY" id="geb-NE-UxQ"/>
+                                            <constraint firstItem="BwP-Wx-zBJ" firstAttribute="centerY" secondItem="Dff-Fw-DiK" secondAttribute="centerY" id="nRm-Dz-U61"/>
+                                            <constraint firstItem="QSV-XC-xtx" firstAttribute="top" secondItem="Dff-Fw-DiK" secondAttribute="top" id="osP-V3-QAq"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="psL-aG-Q3U"/>
+                                            <constraint firstAttribute="bottom" secondItem="woC-HJ-SUT" secondAttribute="bottom" id="qSZ-4F-5cU"/>
+                                            <constraint firstAttribute="trailing" secondItem="woC-HJ-SUT" secondAttribute="trailing" id="tlL-7M-Usc"/>
+                                            <constraint firstItem="QSV-XC-xtx" firstAttribute="leading" secondItem="Dff-Fw-DiK" secondAttribute="leading" constant="4" id="uF8-kc-dEK"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="psL-aG-Q3U"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xYc-Wh-nE0" firstAttribute="top" secondItem="X53-eg-9rV" secondAttribute="top" id="0nV-X8-7cU"/>
+                                    <constraint firstItem="Dff-Fw-DiK" firstAttribute="leading" secondItem="X53-eg-9rV" secondAttribute="leading" id="4a5-2X-HHT"/>
+                                    <constraint firstAttribute="height" constant="64" id="YfC-JJ-IOt"/>
+                                    <constraint firstItem="Dff-Fw-DiK" firstAttribute="top" secondItem="xYc-Wh-nE0" secondAttribute="bottom" id="ikF-rD-AzY"/>
+                                    <constraint firstItem="xYc-Wh-nE0" firstAttribute="leading" secondItem="X53-eg-9rV" secondAttribute="leading" id="qjT-iw-iOX"/>
+                                    <constraint firstAttribute="trailing" secondItem="xYc-Wh-nE0" secondAttribute="trailing" id="qnL-ao-FLG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dff-Fw-DiK" secondAttribute="trailing" id="zEu-Dh-iRT"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-90-TuT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="2h7-4q-Khg" customClass="ClockTableViewCell" customModule="Smartisan_Clock" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2h7-4q-Khg" id="S81-xZ-fDA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnJ-Tj-H8S">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="99"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNP-nY-AaN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="115" height="99"/>
+                                                            <fontDescription key="fontDescription" name="SmartisanClock-Bold" family="SmartisanClock" pointSize="17"/>
+                                                            <color key="textColor" red="0.40495375560538116" green="0.40495375560538116" blue="0.40495375560538116" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_panel_black" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-ow-v8s">
+                                                            <rect key="frame" x="115" y="0.0" width="114" height="99"/>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Dl-SW-tfR">
+                                                            <rect key="frame" x="229" y="0.0" width="115" height="99"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmL-nw-Rtt">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="33"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:14" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cu1-lk-32U">
+                                                                    <rect key="frame" x="0.0" y="33" width="115" height="33"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <color key="textColor" red="0.76238185167312622" green="0.36576652526855469" blue="0.34096240997314453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和本地时间一样" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EE-gY-Xhg">
+                                                                    <rect key="frame" x="0.0" y="66" width="115" height="33"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.34581698430493268" green="0.34581698430493268" blue="0.34581698430493268" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="cu1-lk-32U" firstAttribute="height" secondItem="3EE-gY-Xhg" secondAttribute="height" id="D8G-0u-29l"/>
+                                                                <constraint firstItem="dmL-nw-Rtt" firstAttribute="height" secondItem="cu1-lk-32U" secondAttribute="height" id="mO5-Oc-r9D"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="c3z-ow-v8s" firstAttribute="width" secondItem="7Dl-SW-tfR" secondAttribute="width" id="3dR-mj-YdR"/>
+                                                        <constraint firstItem="sNP-nY-AaN" firstAttribute="width" secondItem="c3z-ow-v8s" secondAttribute="width" id="dyC-aL-qQ4"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BnJ-Tj-H8S" firstAttribute="top" secondItem="S81-xZ-fDA" secondAttribute="top" id="QR2-aC-jaa"/>
+                                                <constraint firstAttribute="bottom" secondItem="BnJ-Tj-H8S" secondAttribute="bottom" id="bQ4-zB-REg"/>
+                                                <constraint firstAttribute="trailing" secondItem="BnJ-Tj-H8S" secondAttribute="trailing" constant="16" id="dOC-At-of9"/>
+                                                <constraint firstItem="BnJ-Tj-H8S" firstAttribute="leading" secondItem="S81-xZ-fDA" secondAttribute="leading" constant="16" id="mSH-5H-Obc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WhZ-90-TuT" firstAttribute="top" secondItem="X53-eg-9rV" secondAttribute="bottom" id="2Ia-42-fG4"/>
+                            <constraint firstAttribute="trailing" secondItem="X53-eg-9rV" secondAttribute="trailing" id="7ha-Zy-W4p"/>
+                            <constraint firstItem="X53-eg-9rV" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="Xi8-3K-Bil"/>
+                            <constraint firstItem="WhZ-90-TuT" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="bXi-sB-nl4"/>
+                            <constraint firstAttribute="trailing" secondItem="WhZ-90-TuT" secondAttribute="trailing" id="css-tq-6KL"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="WhZ-90-TuT" secondAttribute="bottom" id="fub-aG-ESR"/>
+                            <constraint firstItem="X53-eg-9rV" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="yxm-uN-Js4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dbY-QY-5kq"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267.5" y="-320.5"/>
+        </scene>
+        <!--闹钟-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Smartisan_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6O-eF-ga4" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bae-tY-wZ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="uiL-kj-rvN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tt-e7-2In">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbar_background" translatesAutoresizingMaskIntoConstraints="NO" id="zCV-Kq-pI3">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="YxZ-Z4-4Xu"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="YxZ-Z4-4Xu"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irf-Or-IYh">
+                                                <rect key="frame" x="4" y="0.0" width="61" height="44"/>
+                                                <state key="normal" image="topbar_button_info" backgroundImage="topbar_button_black_normal"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="闹钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaM-uj-fVt">
+                                                <rect key="frame" x="169" y="10" width="36" height="24"/>
+                                                <fontDescription key="fontDescription" name="SmartisanClock-Bold" family="SmartisanClock" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi9-8h-663">
+                                                <rect key="frame" x="310" y="0.0" width="61" height="44"/>
+                                                <state key="normal" image="topbar_button_add" backgroundImage="topbar_button_black_normal"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="LaM-uj-fVt" firstAttribute="centerY" secondItem="8tt-e7-2In" secondAttribute="centerY" id="8cT-TO-VEt"/>
+                                            <constraint firstItem="zCV-Kq-pI3" firstAttribute="top" secondItem="8tt-e7-2In" secondAttribute="top" id="FZx-hg-o6g"/>
+                                            <constraint firstItem="Irf-Or-IYh" firstAttribute="top" secondItem="8tt-e7-2In" secondAttribute="top" id="Jfh-GF-XPv"/>
+                                            <constraint firstAttribute="bottom" secondItem="zCV-Kq-pI3" secondAttribute="bottom" id="X4g-ns-uAn"/>
+                                            <constraint firstItem="hi9-8h-663" firstAttribute="centerY" secondItem="8tt-e7-2In" secondAttribute="centerY" id="bza-Fv-AiW"/>
+                                            <constraint firstAttribute="trailing" secondItem="zCV-Kq-pI3" secondAttribute="trailing" id="daq-MQ-mIE"/>
+                                            <constraint firstItem="LaM-uj-fVt" firstAttribute="centerX" secondItem="8tt-e7-2In" secondAttribute="centerX" id="e9M-Xe-xI1"/>
+                                            <constraint firstItem="zCV-Kq-pI3" firstAttribute="leading" secondItem="8tt-e7-2In" secondAttribute="leading" id="mw9-Bh-3qJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="pyD-wC-M9b"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="qIC-Gv-sbm"/>
+                                            <constraint firstItem="Irf-Or-IYh" firstAttribute="leading" secondItem="8tt-e7-2In" secondAttribute="leading" constant="4" id="u1M-bk-Y7T"/>
+                                            <constraint firstAttribute="trailing" secondItem="hi9-8h-663" secondAttribute="trailing" constant="4" id="uSY-z2-3qH"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="qIC-Gv-sbm"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8tt-e7-2In" secondAttribute="trailing" id="4VP-xl-kJ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="bae-tY-wZ0" secondAttribute="trailing" id="F8t-NZ-fte"/>
+                                    <constraint firstItem="8tt-e7-2In" firstAttribute="top" secondItem="bae-tY-wZ0" secondAttribute="bottom" id="Grc-Mu-ido"/>
+                                    <constraint firstItem="bae-tY-wZ0" firstAttribute="top" secondItem="D6O-eF-ga4" secondAttribute="top" id="Rss-ut-8lX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="YZq-Ss-VJj"/>
+                                    <constraint firstItem="8tt-e7-2In" firstAttribute="leading" secondItem="D6O-eF-ga4" secondAttribute="leading" id="cAF-9Y-KLG"/>
+                                    <constraint firstItem="bae-tY-wZ0" firstAttribute="leading" secondItem="D6O-eF-ga4" secondAttribute="leading" id="orl-go-4Tl"/>
+                                    <constraint firstAttribute="height" constant="64" id="rLp-4m-IRN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D6O-eF-ga4" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="-20" id="OI5-wm-9at"/>
+                            <constraint firstItem="D6O-eF-ga4" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="dgQ-mq-sIM"/>
+                            <constraint firstAttribute="trailing" secondItem="D6O-eF-ga4" secondAttribute="trailing" id="jPW-CH-UhM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="闹钟" image="icon_alarm_off" selectedImage="icon_alarm_on" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.5" y="408.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="tabbar_background" selectionIndicatorImage="tabbar_selected_item_bg" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bV7-Kf-5cL" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="fty-qW-iZz" kind="relationship" relationship="viewControllers" id="wqw-Ti-a5b"/>
+                        <segue destination="CIA-TL-r2g" kind="relationship" relationship="viewControllers" id="t1K-cQ-cLX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--计时器-->
+        <scene sceneID="VcM-dW-3KP">
+            <objects>
+                <viewController id="CIA-TL-r2g" customClass="FirstViewController" customModule="Smartisan_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k0N-1A-qCa"/>
+                        <viewControllerLayoutGuide type="bottom" id="xYq-z6-L5e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6AH-U7-ts8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvS-iU-CKa" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrA-bu-5fZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="w1C-6A-296"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shN-0K-RH8">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbar_background" translatesAutoresizingMaskIntoConstraints="NO" id="g8t-dy-MOC">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="wUg-Hk-vzv"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="wUg-Hk-vzv"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBf-GW-5qz">
+                                                <rect key="frame" x="4" y="0.0" width="61" height="44"/>
+                                                <state key="normal" image="topbar_button_info" backgroundImage="topbar_button_black_normal"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="计时器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJP-md-1Fo">
+                                                <rect key="frame" x="160" y="10" width="54" height="24"/>
+                                                <fontDescription key="fontDescription" name="SmartisanClock-Bold" family="SmartisanClock" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="DSN-dH-k6T"/>
+                                            <constraint firstItem="jBf-GW-5qz" firstAttribute="top" secondItem="shN-0K-RH8" secondAttribute="top" id="Dys-4Q-3sJ"/>
+                                            <constraint firstItem="g8t-dy-MOC" firstAttribute="leading" secondItem="shN-0K-RH8" secondAttribute="leading" id="K1q-WQ-qAT"/>
+                                            <constraint firstItem="jBf-GW-5qz" firstAttribute="leading" secondItem="shN-0K-RH8" secondAttribute="leading" constant="4" id="VY0-1d-hV4"/>
+                                            <constraint firstItem="oJP-md-1Fo" firstAttribute="centerX" secondItem="shN-0K-RH8" secondAttribute="centerX" id="YwA-NL-5RR"/>
+                                            <constraint firstItem="g8t-dy-MOC" firstAttribute="top" secondItem="shN-0K-RH8" secondAttribute="top" id="lVy-UP-2rO"/>
+                                            <constraint firstAttribute="trailing" secondItem="g8t-dy-MOC" secondAttribute="trailing" id="rwK-8w-1qp"/>
+                                            <constraint firstItem="oJP-md-1Fo" firstAttribute="centerY" secondItem="shN-0K-RH8" secondAttribute="centerY" id="w4P-mo-lZH"/>
+                                            <constraint firstAttribute="height" constant="44" id="x5V-OB-JuE"/>
+                                            <constraint firstAttribute="bottom" secondItem="g8t-dy-MOC" secondAttribute="bottom" id="y9Y-0Y-eNd"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DSN-dH-k6T"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nrA-bu-5fZ" firstAttribute="top" secondItem="CvS-iU-CKa" secondAttribute="top" id="2ZT-NN-qSc"/>
+                                    <constraint firstItem="shN-0K-RH8" firstAttribute="leading" secondItem="CvS-iU-CKa" secondAttribute="leading" id="5mW-Gg-29f"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="9Wm-jx-Nez"/>
+                                    <constraint firstAttribute="height" constant="64" id="AzG-6L-k2H"/>
+                                    <constraint firstAttribute="trailing" secondItem="shN-0K-RH8" secondAttribute="trailing" id="Ckl-oa-0oz"/>
+                                    <constraint firstItem="nrA-bu-5fZ" firstAttribute="leading" secondItem="CvS-iU-CKa" secondAttribute="leading" id="bBl-ql-JQm"/>
+                                    <constraint firstAttribute="trailing" secondItem="nrA-bu-5fZ" secondAttribute="trailing" id="ebs-0W-Pmf"/>
+                                    <constraint firstItem="shN-0K-RH8" firstAttribute="top" secondItem="nrA-bu-5fZ" secondAttribute="bottom" id="pne-HY-44a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CvS-iU-CKa" secondAttribute="trailing" id="JmI-9p-qSp"/>
+                            <constraint firstItem="CvS-iU-CKa" firstAttribute="top" secondItem="k0N-1A-qCa" secondAttribute="bottom" constant="-20" id="Xjc-hl-mhr"/>
+                            <constraint firstItem="CvS-iU-CKa" firstAttribute="leading" secondItem="6AH-U7-ts8" secondAttribute="leading" id="zVr-1j-5e6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="计时器" image="icon_timer_off" selectedImage="icon_timer_on" id="yPn-8Q-kn2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kk-HW-IAP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1291.5" y="480.5"/>
+        </scene>
+        <!--秒表-->
+        <scene sceneID="rhW-gA-sfA">
+            <objects>
+                <viewController id="fty-qW-iZz" customClass="FirstViewController" customModule="Smartisan_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="12I-cB-13w"/>
+                        <viewControllerLayoutGuide type="bottom" id="4fF-xT-7mw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKd-5Z-PUv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8Z-vo-NqB" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="da5-SB-L6q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="st5-NH-Vn7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWq-bq-SfW">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbar_background" translatesAutoresizingMaskIntoConstraints="NO" id="jor-o4-D5m">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="D95-uB-lnI"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="D95-uB-lnI"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pT-4P-h3i">
+                                                <rect key="frame" x="4" y="0.0" width="61" height="44"/>
+                                                <state key="normal" image="topbar_button_info" backgroundImage="topbar_button_black_normal"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-EP-7f8">
+                                                <rect key="frame" x="169" y="10" width="36" height="24"/>
+                                                <fontDescription key="fontDescription" name="SmartisanClock-Bold" family="SmartisanClock" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="YIS-EP-7f8" firstAttribute="centerX" secondItem="JWq-bq-SfW" secondAttribute="centerX" id="6xL-i3-dBc"/>
+                                            <constraint firstItem="YIS-EP-7f8" firstAttribute="centerY" secondItem="JWq-bq-SfW" secondAttribute="centerY" id="FHw-0I-fs9"/>
+                                            <constraint firstItem="jor-o4-D5m" firstAttribute="top" secondItem="JWq-bq-SfW" secondAttribute="top" id="KPH-FX-ixE"/>
+                                            <constraint firstItem="7pT-4P-h3i" firstAttribute="leading" secondItem="JWq-bq-SfW" secondAttribute="leading" constant="4" id="OpH-8P-Fbn"/>
+                                            <constraint firstItem="jor-o4-D5m" firstAttribute="leading" secondItem="JWq-bq-SfW" secondAttribute="leading" id="bgs-TF-Fqe"/>
+                                            <constraint firstAttribute="bottom" secondItem="jor-o4-D5m" secondAttribute="bottom" id="faT-ym-dfO"/>
+                                            <constraint firstAttribute="height" constant="44" id="hRZ-Tm-FSY"/>
+                                            <constraint firstItem="7pT-4P-h3i" firstAttribute="top" secondItem="JWq-bq-SfW" secondAttribute="top" id="oJn-HK-o85"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="tQJ-fX-Y8r"/>
+                                            <constraint firstAttribute="trailing" secondItem="jor-o4-D5m" secondAttribute="trailing" id="yqf-Jb-KGb"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="tQJ-fX-Y8r"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="1Xe-6g-3fY"/>
+                                    <constraint firstAttribute="height" constant="64" id="Fkz-6j-RCV"/>
+                                    <constraint firstAttribute="trailing" secondItem="JWq-bq-SfW" secondAttribute="trailing" id="X9h-d0-GJg"/>
+                                    <constraint firstItem="da5-SB-L6q" firstAttribute="top" secondItem="j8Z-vo-NqB" secondAttribute="top" id="c2T-Dn-7rF"/>
+                                    <constraint firstItem="da5-SB-L6q" firstAttribute="leading" secondItem="j8Z-vo-NqB" secondAttribute="leading" id="dxT-Js-AM9"/>
+                                    <constraint firstItem="JWq-bq-SfW" firstAttribute="top" secondItem="da5-SB-L6q" secondAttribute="bottom" id="fls-qh-pqX"/>
+                                    <constraint firstItem="JWq-bq-SfW" firstAttribute="leading" secondItem="j8Z-vo-NqB" secondAttribute="leading" id="jH4-Pa-d6e"/>
+                                    <constraint firstAttribute="trailing" secondItem="da5-SB-L6q" secondAttribute="trailing" id="npP-IE-Qw3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Xe-6g-3fY"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j8Z-vo-NqB" secondAttribute="trailing" id="VPT-Ew-yNL"/>
+                            <constraint firstItem="j8Z-vo-NqB" firstAttribute="leading" secondItem="OKd-5Z-PUv" secondAttribute="leading" id="tXz-bf-g6H"/>
+                            <constraint firstItem="j8Z-vo-NqB" firstAttribute="top" secondItem="12I-cB-13w" secondAttribute="bottom" constant="-20" id="uy8-I1-9tV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="秒表" image="icon_stopwatch_off" selectedImage="icon_stopwatch_on" id="To8-6M-keK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRy-yW-LZc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756.5" y="480.5"/>
+        </scene>
+        <!--世界时钟-->
+        <scene sceneID="1wQ-ux-vlQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bV7-Kf-5cL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="世界时钟" image="icon_worldclock_off" selectedImage="icon_worldclock_on" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zvN-fM-WbW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="t0T-lA-tSm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0nI-1y-6MY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.5" y="-320.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock_panel_black" width="213" height="226"/>
+        <image name="icon_alarm_off" width="32" height="32"/>
+        <image name="icon_alarm_on" width="32" height="32"/>
+        <image name="icon_stopwatch_off" width="32" height="32"/>
+        <image name="icon_stopwatch_on" width="32" height="32"/>
+        <image name="icon_timer_off" width="32" height="32"/>
+        <image name="icon_timer_on" width="32" height="32"/>
+        <image name="icon_worldclock_off" width="32" height="32"/>
+        <image name="icon_worldclock_on" width="32" height="32"/>
+        <image name="tabbar_background" width="80" height="49"/>
+        <image name="tabbar_selected_item_bg" width="80" height="49"/>
+        <image name="topbar_background" width="320" height="44"/>
+        <image name="topbar_button_add" width="24" height="24"/>
+        <image name="topbar_button_black_normal" width="61" height="44"/>
+        <image name="topbar_button_info" width="24" height="24"/>
+    </resources>
+</document>
