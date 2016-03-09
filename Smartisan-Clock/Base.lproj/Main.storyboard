@@ -404,7 +404,7 @@
         <!--秒表-->
         <scene sceneID="rhW-gA-sfA">
             <objects>
-                <viewController id="fty-qW-iZz" customClass="FirstViewController" customModule="Smartisan_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fty-qW-iZz" customClass="TimeViewController" customModule="Smartisan_Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="12I-cB-13w"/>
                         <viewControllerLayoutGuide type="bottom" id="4fF-xT-7mw"/>

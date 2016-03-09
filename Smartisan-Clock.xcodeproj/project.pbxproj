@@ -22,6 +22,11 @@
 		BD1CCBF31C8C4F9800E9FA8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBF21C8C4F9800E9FA8D /* BaseViewController.swift */; };
 		BD1CCBF51C8C4FE300E9FA8D /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */; };
 		BD1CCBF71C8C566800E9FA8D /* ClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */; };
+		BD3488EA1C8FB08A00B43809 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3488E91C8FB08A00B43809 /* SwiftyJSON.swift */; };
+		BD3488EC1C8FC76F00B43809 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3488EB1C8FC76F00B43809 /* ClockView.swift */; };
+		BD3488EF1C8FC78500B43809 /* ClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3488EE1C8FC78500B43809 /* ClockView.xib */; };
+		BD3488F21C8FD0EB00B43809 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3488F11C8FD0EB00B43809 /* TimeViewController.swift */; };
+		BD71D6FC1C8E774700FA1D90 /* city_all.json in Resources */ = {isa = PBXBuildFile; fileRef = BD71D6FB1C8E774700FA1D90 /* city_all.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,12 @@
 		BD1CCBF21C8C4F9800E9FA8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
 		BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTableViewCell.swift; sourceTree = "<group>"; };
+		BD3488E81C8FB06200B43809 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		BD3488E91C8FB08A00B43809 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		BD3488EB1C8FC76F00B43809 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		BD3488EE1C8FC78500B43809 /* ClockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockView.xib; sourceTree = "<group>"; };
+		BD3488F11C8FD0EB00B43809 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		BD71D6FB1C8E774700FA1D90 /* city_all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city_all.json; sourceTree = "<group>"; };
 		FB316B76EEF0FC1B08E4E837 /* Pods-Smartisan-Clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartisan-Clock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smartisan-Clock/Pods-Smartisan-Clock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,12 +173,12 @@
 			children = (
 				BD1CCB9D1C8C39C400E9FA8D /* AppDelegate.swift */,
 				BD1CCBF21C8C4F9800E9FA8D /* BaseViewController.swift */,
-				BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */,
-				BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */,
+				BD3488F01C8FC7AA00B43809 /* Controller */,
 				BD1CCBA31C8C39C400E9FA8D /* Main.storyboard */,
 				BD1CCBA61C8C39C400E9FA8D /* Assets.xcassets */,
 				BD1CCBA81C8C39C400E9FA8D /* LaunchScreen.storyboard */,
 				BD1CCBAB1C8C39C400E9FA8D /* Info.plist */,
+				BD3488ED1C8FC77600B43809 /* View */,
 				BD1CCBD71C8C3A9300E9FA8D /* Support */,
 			);
 			path = "Smartisan-Clock";
@@ -194,11 +205,14 @@
 		BD1CCBD71C8C3A9300E9FA8D /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				BD3488E91C8FB08A00B43809 /* SwiftyJSON.swift */,
 				BD1CCBCD1C8C3A8900E9FA8D /* SmartisanClock.ttf */,
 				BD1CCBCE1C8C3A8900E9FA8D /* SmartisanClockBold.ttf */,
 				BD1CCBCF1C8C3A8900E9FA8D /* city_all.xml */,
+				BD71D6FB1C8E774700FA1D90 /* city_all.json */,
 				BD1CCBD01C8C3A8900E9FA8D /* statement_EN.html */,
 				BD1CCBD11C8C3A8900E9FA8D /* statement.html */,
+				BD3488E81C8FB06200B43809 /* MyPlayground.playground */,
 				BD1CCBF11C8C3B0F00E9FA8D /* Sounds */,
 			);
 			name = Support;
@@ -234,6 +248,25 @@
 				BD1CCBF01C8C3B0500E9FA8D /* timer.caf */,
 			);
 			name = Sounds;
+			sourceTree = "<group>";
+		};
+		BD3488ED1C8FC77600B43809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCBF61C8C566800E9FA8D /* ClockTableViewCell.swift */,
+				BD3488EB1C8FC76F00B43809 /* ClockView.swift */,
+				BD3488EE1C8FC78500B43809 /* ClockView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BD3488F01C8FC7AA00B43809 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CCBF41C8C4FE300E9FA8D /* WorldClockViewController.swift */,
+				BD3488F11C8FD0EB00B43809 /* TimeViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +381,8 @@
 				BD1CCBD21C8C3A8900E9FA8D /* SmartisanClock.ttf in Resources */,
 				BD1CCBD31C8C3A8900E9FA8D /* SmartisanClockBold.ttf in Resources */,
 				BD1CCBAA1C8C39C400E9FA8D /* LaunchScreen.storyboard in Resources */,
+				BD3488EF1C8FC78500B43809 /* ClockView.xib in Resources */,
+				BD71D6FC1C8E774700FA1D90 /* city_all.json in Resources */,
 				BD1CCBA71C8C39C400E9FA8D /* Assets.xcassets in Resources */,
 				BD1CCBD61C8C3A8900E9FA8D /* statement.html in Resources */,
 				BD1CCBA51C8C39C400E9FA8D /* Main.storyboard in Resources */,
@@ -424,8 +459,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1CCBF51C8C4FE300E9FA8D /* WorldClockViewController.swift in Sources */,
+				BD3488EC1C8FC76F00B43809 /* ClockView.swift in Sources */,
 				BD1CCBF31C8C4F9800E9FA8D /* BaseViewController.swift in Sources */,
 				BD1CCBF71C8C566800E9FA8D /* ClockTableViewCell.swift in Sources */,
+				BD3488F21C8FD0EB00B43809 /* TimeViewController.swift in Sources */,
+				BD3488EA1C8FB08A00B43809 /* SwiftyJSON.swift in Sources */,
 				BD1CCB9E1C8C39C400E9FA8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
